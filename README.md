@@ -1,4 +1,4 @@
-# 🛒 E-commerce Admin API – Forsit Backend Developer Task
+# 🛒 E-commerce Admin API – Backend Developer Task
 
 This is a backend system built with **FastAPI** and **PostgreSQL** that powers an **admin dashboard** for managing an 
 e-commerce platform. The system provides insights into sales, inventory, and supports product management operations.
