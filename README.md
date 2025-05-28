@@ -37,13 +37,32 @@ To the Swagger visit http://localhost:8000/docs
 
 ## 📦 Endpoints
 
+### 📊 Product Module
+- GET /products/
+  - Retrieve all products  
+
+
+- POST /products/
+  - name
+  - description
+  - price
+  - category_id
+
 ### 📊 Inventory Module
 - GET /inventory/
   - Retrieve all inventory records  
-- GET /inventory/low-stock 
-  - Get low stock inventories
+
+
+- POST /inventory/
+  - product_id
+  - quantity
+  - low_stock_threshold
+
+
+- GET /inventory/low-stock/
+
+
 - PUT /inventory/low-stock/{product_id} 
-  - Update Inventory reord using the following data:
     - quantity
 
 ### 🏷️ Sales Module

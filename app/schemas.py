@@ -19,6 +19,19 @@ class ProductResponse(BaseModel):
         orm_mode = True
 
 
+class SaleCreate(BaseModel):
+    product_id: int
+    quantity: int
+    total_amount: float
+    sale_date: Optional[date] = None
+
+
+class InventoryCreate(BaseModel):
+    product_id: int
+    quantity: int
+    low_stock_threshold: Optional[int] = 10
+
+
 class SaleBase(BaseModel):
     product_id: int
     quantity: int
