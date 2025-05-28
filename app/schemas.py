@@ -2,6 +2,22 @@ from pydantic import BaseModel
 from datetime import date
 from typing import Optional
 
+class ProductCreate(BaseModel):
+    name: str
+    description: Optional[str] = None
+    price: float
+    category_id: int
+
+class ProductResponse(BaseModel):
+    id: int
+    name: str
+    description: Optional[str]
+    price: float
+    category_id: int
+
+    class Config:
+        orm_mode = True
+
 
 class SaleBase(BaseModel):
     product_id: int
